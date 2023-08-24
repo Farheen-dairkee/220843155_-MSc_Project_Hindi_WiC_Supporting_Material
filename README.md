@@ -37,52 +37,31 @@ This code was used to read the datasets and create the hindi language train, val
 
 To avoid any issues in the running of the code, please run the code according to the given sequence of sections. 
 
-crosslingual_wic.ipynb
+[crosslingual_wic.ipynb](https://github.com/Farheen-dairkee/MSc_Project_Hindi_WiC/blob/main/crosslingual_wic.ipynb)
 
 In this notebook, I have loaded the train and validation sets of the English WiC Dataset and used the multilingual model mBERT to train on this dataset. 
 The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 
 
 ### The code contains all the lines needed to install and import the necessary libraries.
 
-crosslingual_wic_xlmr.ipynb
+[crosslingual_wic_xlmr.ipynb](https://github.com/Farheen-dairkee/MSc_Project_Hindi_WiC/blob/main/crosslingual_wic%20-%20xlmr.ipynb)
 
 In this notebook, I have loaded the train and validation sets of the English WiC Dataset and used the multilingual model XLM-RoBERTa to train on this dataset. 
 The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 
 
 ### The code contains all the lines needed to install and import the necessary libraries.
 
-[monolingual_wic.ipynb](www.google.com)
+[monolingual_wic.ipynb](https://github.com/Farheen-dairkee/MSc_Project_Hindi_WiC/blob/main/monoligual_wic.ipynb)
 
-In this notebook, I have loaded the created Hindi WiC Dataset and used the multilingual model mBERT, IndicBERT and MuRIL to train on this dataset. The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 
+In this notebook, I have loaded the created Hindi WiC Dataset and used the models mBERT, IndicBERT and MuRIL to train on this dataset. The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 
 
-#### The code contains all the lines needed to install and import the necessary libraries.
+### The code contains all the lines needed to install and import the necessary libraries.
 
-Libraries Installed
+### Please note that model name has to be chosen in the "Import Model & Model Tokenizer | Model Definition" section
 
-```
-pip install pytorch-transformers
-!pip install transformers
-```
+[monolingual_wic - xlmr.ipynb](https://github.com/Farheen-dairkee/MSc_Project_Hindi_WiC/blob/main/monoligual_wic%20-%20xlmr.ipynb)
 
-Libraries Imported
-```
-import torch
-import os
-import string
-import copy
-from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-from sklearn.metrics import classification_report
-from pytorch_transformers import *
-import numpy as np
-import json
-import collections
-from sklearn.utils import shuffle
-from sklearn.metrics import accuracy_score
-import torch.nn as nn
-import torch.nn.functional as F
-import pandas as pd
-```
-
+In this notebook, I have loaded the created Hindi WiC Dataset and used the multilingual model XLM-RoBERTa to train on this dataset. The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 
 
 # Dataset Used
 

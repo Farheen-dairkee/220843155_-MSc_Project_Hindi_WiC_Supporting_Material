@@ -87,6 +87,8 @@ The dataset is available SuperGLUE benchmark site (https://super.gluebenchmark.c
 
 The format of this dataset includes target words, two sentences of same or different contexts and labels namely 0 (False) and 1 (True). These sentences contain the target word and could denote the same meaning or not. This dataset also contains charachter positions of the target words in the sentences. The training set contains 7000 instances, validation set contains 1000 instances and the test set contains 2000 instances.
 
+* This dataset will be made publicly available after the following all the necessary protocol. The dataset included here shall only be used for testing purposed for the thesis.
+
 This dataset was created with the help of "Sense Annotated Hindi Corpus" whose paper can be found here, https://ieeexplore.ieee.org/document/7875926.  
 
 # References

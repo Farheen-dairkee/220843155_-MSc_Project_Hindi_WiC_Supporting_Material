@@ -51,7 +51,7 @@ The model after fine tuned on the given dataset is then tested on the Hindi WiC 
 
 ### The code contains all the lines needed to install and import the necessary libraries.
 
-monolingual_wic.ipynb [www.google.com]
+[monolingual_wic.ipynb](www.google.com)
 
 In this notebook, I have loaded the created Hindi WiC Dataset and used the multilingual model mBERT, IndicBERT and MuRIL to train on this dataset. The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 
 

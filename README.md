@@ -75,6 +75,8 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 In this notebook, I have loaded the created Hindi WiC Dataset and used the multilingual model XLM-RoBERTa to train on this dataset. The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 
 
+### The code contains all the lines needed to install and import the necessary libraries.
+
 # Dataset Used
 
 ## English WiC Dataset

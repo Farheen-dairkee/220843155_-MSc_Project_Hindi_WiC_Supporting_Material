@@ -59,6 +59,18 @@ In this notebook, I have loaded the created Hindi WiC Dataset and used the model
 
 ### Please note that model name has to be chosen in the "Import Model & Model Tokenizer | Model Definition" section
 
+Changes in Code:
+```
+#tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, AdamW
+model_name='bert-base-multilingual-cased'
+#model_name='google/muril-base-cased'
+#model_name='ai4bharat/indic-bert'
+print(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+```
+
+
 [monolingual_wic - xlmr.ipynb](https://github.com/Farheen-dairkee/MSc_Project_Hindi_WiC/blob/main/monoligual_wic%20-%20xlmr.ipynb)
 
 In this notebook, I have loaded the created Hindi WiC Dataset and used the multilingual model XLM-RoBERTa to train on this dataset. The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 

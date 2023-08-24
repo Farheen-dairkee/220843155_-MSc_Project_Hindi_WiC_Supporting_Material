@@ -29,9 +29,9 @@ In my study, I looked at different contextual embedding models and compared thei
 
 ## Python Files
 
-dataset_preprocessing.py
+[dataset_preprocessing.py](https://github.com/Farheen-dairkee/MSc_Project_Hindi_WiC/blob/main/dataset_preprocessing.py)
 
-This code was used to read the datasets and create the hindi language train, validation and test datasets. The code reads from the original dataset "Sense Annotated Hindi Corpus" (SAHC) [6](https://ieeexplore.ieee.org/document/787592) and converts it into the WiC dataset which follows the format of the English WiC Dataset. Since the SAHC dataset can't be published without the required permissions, I have not uploaded the dataset in this repo. 
+This code was used to read the datasets and create the hindi language train, validation and test datasets. The code reads from the original dataset "Sense Annotated Hindi Corpus" [6] (SAHC)(https://ieeexplore.ieee.org/document/787592) and converts it into the WiC dataset which follows the format of the English WiC Dataset. Since the SAHC dataset can't be published without the required permissions, I have not uploaded the dataset in this repo. 
 
 ## Jupyter Notebooks
 

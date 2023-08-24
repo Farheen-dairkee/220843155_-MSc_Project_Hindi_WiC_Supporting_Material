@@ -3,9 +3,11 @@
 # About
 
 ## Task Description
-Hindi is spoken by more than 500 million people worldwide. However, the development of NLP research in this language has been significantly slower compared to the rapid progress made in other languages. As a result, my research project is centered around tackling a specific challenge known as Word Sense Disambiguation (WSD) in Hindi. This challenge serves as a way to assess whether there truly is an issue with NLP support for the Hindi Language. To approach this challenge, I have used the Word-in-Context (WiC) approach, WiC as defined on the official website (https://pilehvar.github.io/wic/) is a binary classification task. Each instance in WiC has a target word w, either a verb or a noun, for which two contexts are provided. Each of these contexts triggers a specific meaning of w. The task is to identify if the occurrences of w in the two contexts correspond to the same meaning or not. For Hindi, there are not enough helpful resources available for this method. So, I created a new dataset to help with WiC in Hindi.
+Hindi is spoken by more than 500 million people worldwide. However, the development of NLP research in this language has been significantly slower compared to the rapid progress made in other languages. As a result, my research project is centered around tackling a specific challenge known as Word Sense Disambiguation (WSD) in Hindi. This challenge serves as a way to assess whether there truly is an issue with NLP support for the Hindi Language. To approach this challenge, I have used the Word-in-Context (WiC) [1] approach, WiC as defined on the official website (https://pilehvar.github.io/wic/) is a binary classification task. Each instance in WiC has a target word w, either a verb or a noun, for which two contexts are provided. Each of these contexts triggers a specific meaning of w. The task is to identify if the occurrences of w in the two contexts correspond to the same meaning or not. For Hindi, there are not enough helpful resources available for this method. So, I created a new dataset to help with WiC in Hindi.
 
-In my study, I looked at different contextual embedding models and compared their performance on the WiC task. The three types used are: mBERT, IndicBERT, and MuRIL. The first one, mBERT, has been trained on 104 languages including English and Hindi. This model was used for the purpose of cross-lingual learning where the model was trained on English and tested on Hindi as well as monolingual learning where training and testing was done on Hindi Language. The second one, IndicBERT has been pretrained on Hindi corpora. This model’s performance was checked by training and testing on Hindi. The last one, MuRIL, was pretrained with 17 different Indian languages. This model was also used for the same purpose as IndicBERT.
+This researh paper introduces a novel dataset for WiC in Hindi which is used as litmus paper test to understand the progress of NLP support in Hindi. 
+
+In my study, I looked at different contextual embedding models and compared their performance on the WiC task. The four types used are: mBERT [2], XLM-RoBERTa [3], IndicBERT [4], and MuRIL [5]. The first one, mBERT, has been trained on 104 languages including English and Hindi. This model was used for the purpose of cross-lingual learning where the model was trained on English and tested on Hindi as well as monolingual learning where training and testing was done on Hindi Language. The second one, IndicBERT has been pretrained on Hindi corpora. This model’s performance was checked by training and testing on Hindi. The last one, MuRIL, was pretrained with 17 different Indian languages. This model was also used for the same purpose as IndicBERT.
 
 ## Notes
 
@@ -37,41 +39,23 @@ To avoid any issues in the running of the code, please run the code according to
 
 crosslingual_wic.ipynb
 
-In this notebook, I have loaded the train and validation sets of the English WiC Dataset and used the multilingual models mBERT and XLM-RoBERTa to train on this dataset. The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 
+In this notebook, I have loaded the train and validation sets of the English WiC Dataset and used the multilingual model mBERT to train on this dataset. 
+The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 
 
-#### The code contains all the lines needed to install and import the necessary libraries.
+### The code contains all the lines needed to install and import the necessary libraries.
 
-Libraries Installed
+crosslingual_wic_xlmr.ipynb
 
-```
-pip install pytorch-transformers
-!pip install transformers
-```
+In this notebook, I have loaded the train and validation sets of the English WiC Dataset and used the multilingual model XLM-RoBERTa to train on this dataset. 
+The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 
 
-Libraries Imported
-```
-import torch
-import os
-import string
-import copy
-from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-from sklearn.metrics import classification_report
-from pytorch_transformers import *
-import numpy as np
-import json
-import collections
-from sklearn.utils import shuffle
-from sklearn.metrics import accuracy_score
-import torch.nn as nn
-import torch.nn.functional as F
-import pandas as pd
-```
+### The code contains all the lines needed to install and import the necessary libraries.
 
 monolingual_wic.ipynb
 
 In this notebook, I have loaded the created Hindi WiC Dataset and used the multilingual model mBERT, IndicBERT and MuRIL to train on this dataset. The model after fine tuned on the given dataset is then tested on the Hindi WiC Dataset. 
 
-The code contains all the lines needed to install and import the necessary libraries.
+#### The code contains all the lines needed to install and import the necessary libraries.
 
 Libraries Installed
 

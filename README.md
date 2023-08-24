@@ -92,8 +92,13 @@ This dataset was created with the help of "Sense Annotated Hindi Corpus" whose p
 # References
 
 [1]  M. T. Pilehvar and J. Camacho-Collados, "WiC: the Word-in-Context Dataset for Evaluating Context-Sensitive Meaning Representations," in Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), Minneapolis, Minnesota, 2019/6// 2019: Association for Computational Linguistics, pp. 1267-1273, doi: 10.18653/v1/N19-1128. [Online]. Available: https://aclanthology.org/N19-1128
+
 [2]  J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding," 2018/10// 2018.
+
 [3]  A. Conneau, K. Khandelwal, N. Goyal, V. Chaudhary, G. Wenzek, F. Guzmán, E. Grave, M. Ott, L. Zettlemoyer, and V. Stoyanov, “Unsupervised Cross-lingual Representation Learning at Scale,” in Proc. ACL 2020 - 58th Annual Meeting of the Association for Computational Linguistics, 2020, pp. 8440–8451.
+
 [4]  D. Kakwani et al., "IndicNLPSuite: Monolingual Corpora, Evaluation Benchmarks and Pre-trained Multilingual Language Models for Indian Languages," in Findings of the Association for Computational Linguistics: EMNLP 2020, Stroudsburg, PA, USA, 2020: Association for Computational Linguistics, pp. 4948-4961, doi: 10.18653/v1/2020.findings-emnlp.445. 
+
 [5]  S. Khanuja et al., "MuRIL: Multilingual Representations for Indian Languages," 2021/3// 2021.
+
 [6]  S. Singh and T. J. Siddiqui, "Sense annotated Hindi corpus," in 2016 International Conference on Asian Language Processing (IALP), 2016, pp. 22-25.

@@ -19,6 +19,8 @@ In my study, I looked at different contextual embedding models and compared thei
 
 * None of these datasets can be distributed publicly as they require permission otherwise.
 
+* To clone please use the given URL: git clone https://github.com/Farheen-dairkee/220843155_-MSc_Project_Hindi_WiC_Supporting_Material.git
+
 ## Findings
 
 * In the crosslingual setting, the multilingual model mBERT was trained on English and tested on Hindi, it performed slightly better than the chance level giving an accuracy of 52% and F1 score of 48%. Another multilingual model XLM-RoBERTa was used while following the same experimental setup yielded an accuracy of 55% and a similar F1 score. The performance of this model is also close to chance level. 

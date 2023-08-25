@@ -13,9 +13,11 @@ In my study, I looked at different contextual embedding models and compared thei
 
 * There is python file that was used for: preprocessing and cleaning of target words, create the final Hindi WiC dataset as per the English WiC dataset and creating training, validation and test sets for Hindi.
 
-* The Jupyter notebooks that are named as crosslingual and monolingual were used to run different contextual embedding models on the datasets and assess their performance. These notebooks were made to run on Google Colab.
+* The Jupyter notebooks that are named as crosslingual_wic, crosslingual_wic - xlmr, monolingual_wic and monolingual_wic - xlmr were used to run different contextual embedding models on the datasets and assess their performance. These notebooks were made to run on Google Colab.
 
-* Apart from the Hindi WiC Dataset that has been used, the training and validation sets of the English WiC Dataset created for the SuperGLUE WiC task was also used for the purpose of transfer learning (more information is given below).
+* Apart from the Hindi WiC Dataset that has been used, the training and validation sets of the English WiC Dataset created for the SuperGLUE WiC task was also used for the purpose of transfer learning (more information is given below). Please ensure all the datasets are uploaded in Colab while running the codes.
+
+* None of these datasets can be distributed publicly as they require permission otherwise.
 
 ## Findings
 
